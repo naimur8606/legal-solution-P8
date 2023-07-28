@@ -196,8 +196,8 @@
                 <h1 class="text-[#414040] text-4xl font-black my-3">Contact With Us</h1>
                 <p class="text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
             </div>
-            <div class="flex ">
-                <div class="grid grid-cols-2 gap-3 w-1/2">
+            <div class="flex flex-col lg:flex-row">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 w-full lg:w-1/2">
                     <div class="bg-[#F3F3F3] p-14 text-center">
                         <img class="mx-auto" src="./images/address.png" alt="">
                         <h3 class="text-2xl font-black my-5">Address</h3>
@@ -223,7 +223,7 @@
                             Sunday: 9AM to 1 PM</h4>
                     </div>
                 </div>
-                <div class="w-1/2 space-y-4 pl-5">
+                <div class="w-full lg:w-1/2 space-y-4 mt-5 lg:mt-0 lg:pl-5">
                     <!-- xs -->
                     <input type="text" placeholder="Your Name" class="p-4 rounded-xl w-[100%] block bg-[#F3F3F3]" />
                     <!-- sm -->
@@ -232,10 +232,41 @@
                     <input type="text" placeholder="Subject" class="p-4 rounded-xl w-[100%] block bg-[#F3F3F3]" />
                     <!-- lg -->
                     <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" class="p-4 rounded-xl w-[100%] block bg-[#F3F3F3]"></textarea>
-                    <button class="btn bg-[#B68C5A] text-white w-full text-xl">Send Message</button>
+                    <button class="btn bg-[#B68C5A] text-white hover:text-[#B68C5A] w-full text-xl">Send Message</button>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="bg-black flex flex-col md:flex-row justify-center space-y-4 py-20">
+        <div class="w-10/12 mx-auto md:w-[20%]">
+            <div class="flex items-center md:mb-10">
+                <img class="h-11" src="images/logo.png" alt=""><h2 class="text-white text-4xl font-extrabold ml-4">Justice</h2>
+            </div>
+            <p class="text-[#CFCFCF]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        </div>
+        <div class="w-10/12 mx-auto md:w-[20%] md:pl-10">
+            <h3 class="text-white text-2xl md:mb-10">Usefull Link</h3>
+            <ul class="text-[#CFCFCF] flex md:flex-col items-center justify-around md:space-y-2">
+                <li>Home</li>
+                <li>Services</li>
+                <li>Cases</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="w-10/12 mx-auto md:w-[20%] ">
+            <h3 class="text-white text-2xl md:mb-10">Contact Now</h3>
+            <ul class="text-[#CFCFCF] space-y-2">
+                <li>555 4th 5t NW, Washington <br>DC 20530, United States</li>
+                <li>+88 01750 000 000 <br>+88 01750 000 000</li>
+                <li>info@gmail.com <br>info@gmail.com</li>
+            </ul>
+        </div>
+        <div class="w-10/12 mx-auto md:w-[20%] ">
+            <h3 class="text-white text-2xl md:mb-10">Subscribe</h3>
+            <p class="text-[#CFCFCF] mb-4">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
+            <button class="btn bg-[#B68C5A] text-white hover:text-[#B68C5A] w-full text-xl">Subscribe</button>
+        </div>
+    </footer>
 </body>
 </html>
